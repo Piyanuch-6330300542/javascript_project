@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function greeting(){
+                document.getElementById('demo').innerHTML = 'Hello Piyanuch';
+                let name=prompt("Input your name")
+                window.alert('Hello ' + name);
+                document.getElementById('demo').innerHTML = 'Hello ' + name;
+            }
+
+            function changeTored(){
+                document.getElementById('demo').style.color='red';
+            }
+
+            function changeToDog(){
+                document.getElementById('pic').src="https://pbs.twimg.com/media/D3KVIGYVAAEbald.jpg";
+                document.getElementById('pic').width="300"
+                document.getElementById('pic').width="300"
+            }
+            function changeToCat(){
+                document.getElementById('pic').src="https://i.pinimg.com/236x/a6/99/83/a699837de7d35ea4d154b812d40ca393.jpg";
+                document.getElementById('pic').width="300"
+                document.getElementById('pic').width="300"
+            }
+        </script>
+    </head>
+<body>
+
+<h2>My First JavaScript</h2>
+
+
+
+<img id="pic" width="300" height="300" src="https://i.pinimg.com/236x/a6/99/83/a699837de7d35ea4d154b812d40ca393.jpg"><br>
+<button type="button"
+onclick="greeting()">Click me to display Date and Time.</button>
+<button type="button"
+onclick="changeTored()">Click to change the color.</button>
+<button type="button"
+onclick="changeToDog()">Dog</button>
+<button type="button"
+onclick="changeToCat()">Cat</button>
+
+<p id="demo"></p>
+
+</body>
+</html>
